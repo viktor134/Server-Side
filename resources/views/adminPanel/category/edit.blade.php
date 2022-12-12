@@ -1,14 +1,12 @@
-@extends('layouts.dashboard.layout')
+@extends('layouts.dashboard.category.layout');
 @section('content')
-
-  <!-- =============================================== -->
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Привет! Это админка
+        Добавить категорию
         <small>приятные слова..</small>
       </h1>
     </section>
@@ -19,14 +17,20 @@
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">Главная страница</h3>
+          <h3 class="box-title">Меняем категорию</h3>
         </div>
         <div class="box-body">
-          Текст инструкции по пользованию админкой
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Название</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" value="Обучение">
+            </div>
         </div>
+      </div>
         <!-- /.box-body -->
         <div class="box-footer">
-          и здесь есть место для какого-нибудь текста
+          <button class="btn btn-default">Назад</button>
+          <button class="btn btn-warning pull-right">Изменить</button>
         </div>
         <!-- /.box-footer-->
       </div>
@@ -37,4 +41,4 @@
   </div>
   <!-- /.content-wrapper -->
 
-@endsection
+  @endsection
