@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminPanel\DashboardController;
 use App\Http\Controllers\AdminPanel\CategoryController;
-
+use App\Http\Controllers\AdminPanel\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +22,8 @@ Route::get('/', function () {
 
 Route::prefix('admin')->group(function(){
     Route::get('/',[DashboardController::class,'index']);
-    Route::get('/product',[ProductController::class],'index');
-    Route::get('/category',[CategoryController::class],'index');
+    Route::get('/product',[ProductController::class,'index']);
+    Route::get('/category',[CategoryController::class,'index']);
     Route::get('/category/edit',[CategoryController::class,'show']);
     Route::get('/category/show',[CategoryController::class,'edit']);
     Route::get('/category/delete',[CategoryController::class,'delete']);

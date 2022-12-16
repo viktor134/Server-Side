@@ -1,4 +1,4 @@
-@extends('dashboard.category.layout')
+@extends('layouts.dashboard.category.layout')
 @section('content')
   <!-- =============================================== -->
 
